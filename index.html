@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<title>Teclado iídiche — transliteração</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Teclado virtual para escrever em iídiche (ortografia do alfabeto hebraico)">
+<meta name="Keywords" content="yiddish,iidiche,alfabeto,teclado,online">
+<meta property="og:image" content="https://www.lexilogos.com/images/babel_bruegel.jpg">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="Lexilogos" href="../rss.xml">
+<link rel="stylesheet" type="text/css" href="Style/style.css">
+
+<!-- javascript -->
+<script src="Script/script.js"></script>
+
+</head>
+<body onLoad="conversion.saisie.focus()">
+<div class="ca">
+  <img src="Imagem/ki.png" style="max-width: auto; height: auto;">
+</div>
+ 
+
+<div class="center"> 
+<noscript>
+<span class="span-red">Ative o JavaScript no seu navegador! <a class="ext" href="https://www.enable-javascript.com/" target="_blank">instrução</a>.<br><br>
+</noscript>
+<br>
+<form name="conversion">
+<div class="delc"> 
+<br>
+<input type="button" class="eff" title="clear" onClick="reset();conversion.saisie.focus()" value="">
+</div>
+<textarea name="saisie" id="bar" onKeyUp="transcrire()" rows="4" class="cadr"></textarea>
+<br>
+<br>
+<input type="button" class="bf" data-clipboard-action="copy" data-clipboard-target="#bar" value="Copiar">
+<script src="Script/copy.js"></script>
+
+<input type="button" class="bf" onClick="transliterar()" value="Transcrever">
+<input type="button" class="bf" onClick="limparTexto()" value="Apagar">
+
+<script src="Script/Transcribir.js"></script>
+
+<input type="button" class="bf" onClick="alpha(' ')" value="Espaço">
+<div class="espc"></div>
+<div class="rtl">
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="shtumer alef" onclick="alpha('א')" value="א"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="pasekh alef (a)" onclick="alpha('אַ')" value="אַ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="komets alef (o)" onclick="alpha('אָ')" value="אָ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="ayen (e)" onclick="alpha('ע')" value="ע"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="yud" onclick="alpha('י')" value="י"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="khirek yud (i)" onclick="alpha('יִ')" value="יִ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="vov (u)" onclick="alpha('ו')" value="ו"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="melupm vov (u)" onclick="alpha('וּ')" value="וּ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="vov yud (oi)" onclick="alpha('וי')" value="וי"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="tsvey yudn (ei)" onclick="alpha('יי')" value="יי"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="pasekh tsvey yudn (ai)" onclick="alpha('ייַ')" value="ייַ"></p></div>
+<div class="esp mobnul"></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="reysh" onclick="alpha('ר')" value="ר"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="beys" onclick="alpha('ב')" value="ב"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="daled" onclick="alpha('ד')" value="ד"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="pey" onclick="alpha('פּ')" value="פּ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="fey" onclick="alpha('פֿ')" value="פֿ"></p><p><input type="button" class="bt" title="langer fey" onclick="alpha('ף')" value="ף"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="giml" onclick="alpha('ג')" value="ג"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="hey" onclick="alpha('ה')" value="ה"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="zayen shin (zh)" onclick="alpha('זש')" value="זש"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="kuf" onclick="alpha('ק')" value="ק"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="lamed" onclick="alpha('ל')" value="ל"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="mem" onclick="alpha('מ')" value="מ"></p><p><input type="button" class="bt" title="shlos mem" onclick="alpha('ם')" value="ם"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="nun" onclick="alpha('נ')" value="נ"></p><p><input type="button" class="bt" title="langer nun" onclick="alpha('ן')" value="ן"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="samekh" onclick="alpha('ס')" value="ס"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="tes" onclick="alpha('ט')" value="ט"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="tsvey vovn (v)" onclick="alpha('וו')" value="וו"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="zayen" onclick="alpha('ז')" value="ז"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="khof" onclick="alpha('כ')" value="כ"></p><p><input type="button" class="bt" title="langer khof" onclick="alpha('ך')" value="ך"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="tsadek" onclick="alpha('צ')" value="צ"></p><p><input type="button" class="bt" title="tsadek sofit" onclick="alpha('ץ')" value="ץ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="shin (sh)" onclick="alpha('ש')" value="ש"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="tes shin (tsh)" onclick="alpha('טש')" value="טש"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt bt-wide" title="daled zayen shin (dzh)" onclick="alpha('דזש')" value="דזש"></p></div>
+</div>
+<div class="esp"></div>
+</form>
+</div>
+
+</body>
+</html>
