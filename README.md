@@ -1,12 +1,12 @@
-# Teclado iídiche — transliteração
+# Teclado Yiddish — transliteração
 
-Aplicação web estática para escrever em **iídiche** com o alfabeto hebraico (ortografia iídiche) e obter **transliteração** para o alfabeto latino. A interface está em português.
+Aplicação web estática para escrever em **Yiddish** com o alfabeto hebraico (ortografia Yiddish) e obter **transliteração** para o alfabeto latino. A interface está em português.
 
 ## O que o projeto faz
 
-- **Teclado virtual**: botões inserem letras, ligaduras e combinações usuais no iídiche (por exemplo אַ, אָ, פּ, פֿ, טש, וו) diretamente na área de texto, respeitando a posição do cursor.
+- **Teclado virtual**: botões inserem letras, ligaduras e combinações usuais no Yiddish (por exemplo אַ, אָ, פּ, פֿ, טש, וו) diretamente na área de texto, respeitando a posição do cursor.
 - **Digitação em latim → hebraico**: ao digitar no campo de texto, a função `transcrire()` (em `Script/script.js`) converte sequências de teclas latinas em caracteres hebraicos em tempo real (estilo inspirado em ferramentas Lexilogos).
-- **Transliteração hebraico/iídiche → latim**: o botão **Transcrever** chama `transliterar()` (em `Script/Transcribir.js`), que acrescenta ao final do texto a transliteração entre parênteses, segundo regras de ortografia iídiche e um dicionário de exceções (ex.: שלום → sholem).
+- **Transliteração hebraico/Yiddish → latim**: o botão **Transcrever** chama `transliterar()` (em `Script/Transcribir.js`), que acrescenta ao final do texto a transliteração entre parênteses, segundo regras de ortografia iídiche e um dicionário de exceções (ex.: שלום → sholem).
 - **Copiar**: usa a biblioteca **Clipboard.js** (incluída no final de `Script/script.js`) e a inicialização em `Script/copy.js`.
 - **Apagar**: limpa o conteúdo do campo de texto.
 
@@ -39,7 +39,7 @@ Não há `package.json` nem passo de compilação: é **HTML, CSS e JavaScript**
 
 ## Licença e origem
 
-O código mistura componentes típicos de páginas Lexilogos (conversão, estilo de teclado) com lógica própria de transliteração iídiche em `Transcribir.js`. Confirme licenças e atribuições se for redistribuir ou integrar em outro sistema.
+O código mistura componentes típicos de páginas Lexilogos (conversão, estilo de teclado) com lógica própria de transliteração Yiddish em `Transcribir.js`. Confirme licenças e atribuições se for redistribuir ou integrar em outro sistema.
 
 ## Próximos passos (importante)
 
